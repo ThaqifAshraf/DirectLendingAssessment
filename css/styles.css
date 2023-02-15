@@ -1,0 +1,67 @@
+/* Add this style to make the page use grid layout */
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+}
+
+form label {
+  width: 100px;
+  margin-right: 10px;
+}
+
+form input[type="text"], form input[type="date"] {
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+}
+
+form button {
+  margin-top: 25px;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:first-of-type {
+  margin-right: 20px;
+}
+
+/* Add this style to display the retrieved data on the right side */
+#retrieved-data {
+  display: flex;
+  flex-direction: column;
+}
+#retrieved-data h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#retrieved-data table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#retrieved-data td, #retrieved-data th {
+  border: 1px solid black;
+  padding: 5px;
+}
+#retrieved-data th {
+  background-color: #4CAF50;
+  color: white;
+}
