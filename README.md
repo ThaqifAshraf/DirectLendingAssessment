@@ -9,7 +9,7 @@ This is a website for Direct Lending Software Engineering Intern Assessment
     
     [main.html, css, php and js folder]
     
-5.You need to make sure you have XAMPP. If you don't, then go to this link and download and install according to your preferred OS.
+5. You need to make sure you have XAMPP. If you don't, then go to this link and download and install according to your preferred OS.
 
     https://www.apachefriends.org/download.html
 
@@ -24,5 +24,11 @@ This is a website for Direct Lending Software Engineering Intern Assessment
    http://localhost/DirectLending/main.html
 
    You should be able to use the website now.
+   
+   
+P.S : I also made a GET method to retrieve data from the database. To use this you need remove the comment line from the main.html file.
+      The comment line looks like this
+      
+      <!-- (comment line) -->
    
 
