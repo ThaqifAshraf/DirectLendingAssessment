@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 15, 2023 at 03:39 AM
+-- Generation Time: Feb 15, 2023 at 03:47 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.3.33
 
@@ -40,8 +40,9 @@ CREATE TABLE `customer` (
 --
 
 INSERT INTO `customer` (`id`, `name`, `dob`, `address`, `postcode_id`) VALUES
-(13, 'test1', '2023-02-15', '42, JALAN BUNGA ROS', 3),
-(14, 'test1', '2023-02-16', '42, JALAN BUNGA ROS', 3);
+(15, 'Andy', '1990-09-10', 'Jalan 1, 2 and 3', 3),
+(16, 'Jack', '2000-01-01', 'Jalan 4, 5 and 6', 4),
+(17, 'Ong', '1966-05-30', 'Jalan 7, 8 and 9', 5);
 
 -- --------------------------------------------------------
 
@@ -60,7 +61,9 @@ CREATE TABLE `postcode` (
 --
 
 INSERT INTO `postcode` (`id`, `state`, `postcode`) VALUES
-(3, 'Perak', '35000');
+(3, 'Perak', '35000'),
+(4, 'Kuala Lumpur', '50000'),
+(5, 'Johor', '80000');
 
 --
 -- Indexes for dumped tables
@@ -87,13 +90,13 @@ ALTER TABLE `postcode`
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `postcode`
 --
 ALTER TABLE `postcode`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables
